@@ -2,7 +2,7 @@
 
 Versión editable (Mermaid) del modelo entidad-relación. La versión ilustrada está en [`index.html`](index.html) (figuras D1–D6).
 
-- **SQL Connect (Cloud SQL, PostgreSQL):** 32 tablas en tres dominios. Es la fuente de verdad.
+- **SQL Connect (Cloud SQL, PostgreSQL):** 33 tablas en tres dominios. Es la fuente de verdad.
 - **Firestore:** 7 colecciones para datos efímeros, en tiempo real o de forma libre.
 - Tablas y campos en inglés (serán tipos de TypeScript y GraphQL); textos para el cliente en español.
 - Los tipos son orientativos: el esquema definitivo se escribe en el `schema.gql` de SQL Connect.
