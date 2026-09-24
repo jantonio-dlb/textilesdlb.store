@@ -238,7 +238,7 @@ body.pc-no-notes .pc-notes{opacity:.55}
     <div class="pc-chips" aria-label="Paleta"><span class="pc-chip"><i style="background:#0B5563"></i>Petróleo <code>#0B5563</code></span><span class="pc-chip"><i style="background:#D63A1E"></i>Oferta <code>#D63A1E</code></span><span class="pc-chip"><i style="background:#16824A"></i>Menta <code>#16824A</code></span><span class="pc-chip"><i style="background:#1B2733"></i>Pizarra <code>#1B2733</code></span><span class="pc-chip"><i style="background:#F3F5F8"></i>Nube <code>#F3F5F8</code></span></div>
   </div>
   <div class="pc-facts">
-    <div><h3>Ideal si…</h3><ul><li>El objetivo principal es vender volumen y rotar inventario.</li><li>Vais a trabajar con promociones frecuentes y campañas en redes.</li><li>El público es amplio y compara precio, envío y forma de pago.</li></ul></div>
+    <div><h3>Ideal si…</h3><ul><li>El objetivo principal es vender volumen y rotar inventario.</li><li>Van a trabajar con promociones frecuentes y campañas en redes.</li><li>El público es amplio y compara precio, envío y forma de pago.</li></ul></div>
     <div><h3>Ten en cuenta</h3><ul><li>Se parece más a otras tiendas: la marca se diferencia menos.</li><li>Pide disciplina de contenido: banners, cuentas regresivas y opiniones deben estar al día.</li><li>Ofertas y cupones necesitan un motor de promociones en el backend desde el principio.</li></ul></div>
     <div><h3>Tipografías</h3><ul><li><b>Red Hat Display</b> para titulares y precios</li><li><b>Red Hat Text</b> para texto y formularios</li></ul></div>
   </div>
@@ -1144,11 +1144,11 @@ body.pc-no-notes .pc-notes{opacity:.55}
       root.querySelectorAll('[data-size-name]').forEach((n) => { n.textContent = sz.dataset.size; });
       return;
     }
-    // Añadir a la bolsa (solo feedback visual)
+    // Agregar a la bolsa (solo feedback visual)
     const add = e.target.closest('[data-add]');
     if (add) {
       if (!add.dataset.label) add.dataset.label = add.innerHTML;
-      add.innerHTML = add.dataset.added || 'Añadido a tu bolsa';
+      add.innerHTML = add.dataset.added || 'Agregado a tu bolsa';
       add.classList.add('is-added');
       clearTimeout(add._t); add._t = setTimeout(() => { add.innerHTML = add.dataset.label; add.classList.remove('is-added'); }, 1800);
       return;

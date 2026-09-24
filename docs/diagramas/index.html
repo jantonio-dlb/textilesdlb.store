@@ -214,7 +214,7 @@ footer.doc{padding-block:36px 60px;color:var(--muted);font-size:14px}
   <div class="prose">
     <h3>Tres cambios respecto a la guía de arquitectura</h3>
     <ol style="padding-left:1.2em">
-      <li><b>SQL Connect en lugar de Neon o Supabase con Drizzle.</b> La guía lo daba como segunda opción defendible. Desde abril de 2026 admite SQL nativo, tiempo real y triggers para Cloud Functions, lo que reduce las desventajas que señalaba. Sigue vigente el aviso de coste: la instancia de Cloud SQL se paga las 24 horas.</li>
+      <li><b>SQL Connect en lugar de Neon o Supabase con Drizzle.</b> La guía lo daba como segunda opción defendible. Desde abril de 2026 admite SQL nativo, tiempo real y triggers para Cloud Functions, lo que reduce las desventajas que señalaba. Sigue vigente el aviso de costo: la instancia de Cloud SQL se paga las 24 horas.</li>
       <li><b>El webhook de Wompi va en Cloud Functions</b>, no en una ruta de Next.js: un despliegue fallido del front no puede dejar de confirmar cobros, y el trigger de SQL Connect encadena factura, correo y WhatsApp.</li>
       <li><b>Monorepo con el dominio compartido:</b> Next.js y Cloud Functions ejecutan los mismos casos de uso (confirmar pago, cancelar pedido), así que las reglas viven en un paquete común y se prueban una sola vez.</li>
     </ol>
@@ -2434,7 +2434,7 @@ footer.doc{padding-block:36px 60px;color:var(--muted);font-size:14px}
   <ol class="prose" style="padding-left:1.2em">
   <li><b>Proveedor de factura electrónica</b> (Alegra, Siigo o Factus) y en qué momento se factura la contra entrega: al despachar o al entregar. Con el contador.</li>
   <li><b>Región de Google Cloud.</b> Todo en la misma región (App Hosting, Cloud SQL, Functions, Firestore). Confirmar disponibilidad de SQL Connect y App Hosting; candidatas cercanas a Colombia: <code>us-east4</code>, <code>us-east1</code> o <code>southamerica-east1</code>.</li>
-  <li><b>Tamaño de Cloud SQL y presupuesto.</b> Instancia mínima en desarrollo, alertas de presupuesto desde el primer día y revisar la prueba sin coste de SQL Connect.</li>
+  <li><b>Tamaño de Cloud SQL y presupuesto.</b> Instancia mínima en desarrollo, alertas de presupuesto desde el primer día y revisar la prueba sin costo de SQL Connect.</li>
   <li><b>Transportadoras con API</b> de guías y recaudo para empezar (una o dos entre Servientrega, Coordinadora, Interrapidísimo, TCC y Envía).</li>
   <li><b>Contra entrega:</b> ciudades con cobertura y tope de importe.</li>
   <li><b>Zonas y tarifas de envío</b> por peso, y umbral de envío gratis.</li>

@@ -238,7 +238,7 @@ body.pc-no-notes .pc-notes{opacity:.55}
     <div class="pc-chips" aria-label="Paleta"><span class="pc-chip"><i style="background:#15171C"></i>Tinta <code>#15171C</code></span><span class="pc-chip"><i style="background:#2340C4"></i>Cobalto <code>#2340C4</code></span><span class="pc-chip"><i style="background:#EDEFF2"></i>Niebla <code>#EDEFF2</code></span><span class="pc-chip"><i style="background:#D9412A"></i>Señal <code>#D9412A</code></span><span class="pc-chip"><i style="background:#FFFFFF"></i>Blanco <code>#FFFFFF</code></span></div>
   </div>
   <div class="pc-facts">
-    <div><h3>Ideal si…</h3><ul><li>El color y la variedad de tonos son vuestro argumento de venta.</li><li>Queréis una imagen ordenada y moderna que aguante bien 500 referencias.</li><li>Vais a invertir en fotografía de producto sobre fondo neutro.</li></ul></div>
+    <div><h3>Ideal si…</h3><ul><li>El color y la variedad de tonos son su argumento de venta.</li><li>Quieren una imagen ordenada y moderna que aguante bien 500 referencias.</li><li>Van a invertir en fotografía de producto sobre fondo neutro.</li></ul></div>
     <div><h3>Ten en cuenta</h3><ul><li>Pide fotos muy consistentes (mismo fondo, misma luz) para que la cuadrícula funcione.</li><li>Es sobria: las campañas y promociones necesitan banners propios.</li><li>La tipografía expandida ocupa ancho; en móvil los titulares se acortan.</li></ul></div>
     <div><h3>Tipografías</h3><ul><li><b>Archivo Expanded</b> para titulares</li><li><b>Archivo</b> para texto e interfaz</li><li><b>IBM Plex Mono</b> para códigos, gramajes y SKU</li></ul></div>
   </div>
@@ -267,7 +267,7 @@ body.pc-no-notes .pc-notes{opacity:.55}
     <div>
       <p class="eyebrow text-graphite">Componentes</p>
       <div class="mt-4 flex flex-wrap gap-3 items-center">
-        <span class="bg-cobalt text-white h-12 px-6 inline-flex items-center gap-2 font-medium">Añadir a la bolsa</span>
+        <span class="bg-cobalt text-white h-12 px-6 inline-flex items-center gap-2 font-medium">Agregar a la bolsa</span>
         <span class="border border-ink h-12 px-6 inline-flex items-center font-medium">Ver guía de tallas</span>
         <span class="font-mono text-[11px] tracking-wider uppercase px-2 py-1 bg-signal text-white">-20%</span>
         <span class="font-mono text-[11px] tracking-wider uppercase px-2 py-1 border border-ink">Nuevo</span>
@@ -799,7 +799,7 @@ body.pc-no-notes .pc-notes{opacity:.55}
       </div>
       <div class="mt-7 flex gap-3">
         <span class="input w-[120px] font-mono"><svg class="ico " aria-hidden="true"><use href="#i-minus"/></svg> 1 <svg class="ico " aria-hidden="true"><use href="#i-plus"/></svg></span>
-        <button type="button" data-add class="btn-add flex-1 bg-cobalt text-white h-[46px] inline-flex items-center justify-center gap-2 font-medium"><svg class="ico " aria-hidden="true"><use href="#i-bag"/></svg> Añadir a la bolsa</button>
+        <button type="button" data-add class="btn-add flex-1 bg-cobalt text-white h-[46px] inline-flex items-center justify-center gap-2 font-medium"><svg class="ico " aria-hidden="true"><use href="#i-bag"/></svg> Agregar a la bolsa</button>
         <button type="button" class="w-[46px] h-[46px] border border-rule grid place-items-center" aria-label="Guardar"><svg class="ico " aria-hidden="true"><use href="#i-heart"/></svg></button>
       </div>
       <div class="relative mt-6 border border-rule p-5 grid gap-3">
@@ -1096,7 +1096,7 @@ body.pc-no-notes .pc-notes{opacity:.55}
 </div></div><div class="absolute z-20 left-0 right-0 bottom-0 bg-paper border-t border-rule px-4 pt-3 pb-8 flex items-center gap-3">
     <span class="pc-pin" style="top:-14px;left:12px" aria-hidden="true">1</span>
     <div class="leading-tight"><span class="block text-[11px] text-graphite">Total</span><b class="text-[17px]">$49.900</b></div>
-    <button type="button" data-add class="btn-add flex-1 bg-cobalt text-white h-12 inline-flex items-center justify-center gap-2 font-medium"><svg class="ico " aria-hidden="true"><use href="#i-bag"/></svg> Añadir a la bolsa</button>
+    <button type="button" data-add class="btn-add flex-1 bg-cobalt text-white h-12 inline-flex items-center justify-center gap-2 font-medium"><svg class="ico " aria-hidden="true"><use href="#i-bag"/></svg> Agregar a la bolsa</button>
   </div>
     <div class="pc-home" style="color:#15171C"></div>
   </div></div>
@@ -1182,11 +1182,11 @@ body.pc-no-notes .pc-notes{opacity:.55}
       root.querySelectorAll('[data-size-name]').forEach((n) => { n.textContent = sz.dataset.size; });
       return;
     }
-    // Añadir a la bolsa (solo feedback visual)
+    // Agregar a la bolsa (solo feedback visual)
     const add = e.target.closest('[data-add]');
     if (add) {
       if (!add.dataset.label) add.dataset.label = add.innerHTML;
-      add.innerHTML = add.dataset.added || 'Añadido a tu bolsa';
+      add.innerHTML = add.dataset.added || 'Agregado a tu bolsa';
       add.classList.add('is-added');
       clearTimeout(add._t); add._t = setTimeout(() => { add.innerHTML = add.dataset.label; add.classList.remove('is-added'); }, 1800);
       return;
